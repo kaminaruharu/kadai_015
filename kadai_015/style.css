@@ -1,0 +1,42 @@
+/* ルート要素のフォントサイズ */
+:root {
+    font-size: 20px;
+}
+
+/* bodyのフォント種類 */
+body {
+    font-family: "Arial", "Meiryo", sans-serif;
+    text-align: center; /* テキストを中央寄せ */
+}
+
+/* h1の装飾 */
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em; /* ルート要素の2倍 */
+    letter-spacing: 1.2em; /* 文字の大きさに対して1.2倍 */
+    text-shadow: 2px 2px 4px #000000; /* 影の大きさや色は自由 */
+    border-bottom: 3px solid rgb(115, 115, 114); /* 下に3pxの実線 */
+}
+
+/* 「MY PROFILE」の「M」をスカイブルーに、「P」をピンクに */
+h1::first-letter {
+    color: skyblue; /* スカイブルー */
+}
+h1 span.pink {
+    color: rgb(255, 192, 203); /* ピンク */
+}
+
+/* 見出しの色指定 */
+.p {
+    color: rgb(255, 192, 203); /* ピンク */
+}
+.skyblue {
+    color: skyblue; /* スカイブルー */
+}
+
+/* 「名前」～「血液型」までの要素をid属性basicのdivタグで囲む */
+#basic p {
+    font-weight: normal; /* 通常の太さ */
+}
+#basic p.bold {
+    font-weight: bold; /* 太字 */}
